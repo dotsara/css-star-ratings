@@ -1,0 +1,49 @@
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  html { font-size: 15px; }
+}
+@media (max-width: 400px) {
+  html { font-size: 13px; }
+}
+
+section {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.rating {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  margin: 0 auto;
+  text-align: center;
+  width: 180px;
+
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.rating > span {
+  color: #0F1F87;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0;
+  padding: .2rem;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+  color: #0022FC;
+  content: "\2605";
+  cursor: pointer;
+  position: absolute;
+}
