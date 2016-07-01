@@ -9,6 +9,9 @@ html {
   html { font-size: 13px; }
 }
 
+body {
+  font-family: "museo-sans",sans-serif;
+}
 section {
   margin: 0 auto;
   text-align: center;
